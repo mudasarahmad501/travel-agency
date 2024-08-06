@@ -1,0 +1,3464 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* background-color: aqua; */
+}
+
+/* ----------------NavBar------------------ */
+
+.navbar{
+    background: #fff;
+    font-size: 18px;
+    color: black;
+    /* position: fixed; */
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: rgba(255, 255, 255, 1);
+}
+.custom-toggler:focus{
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+.navdiv{
+    display: flex;
+    justify-content: space-between;
+}
+.navs{
+    margin: auto;
+}
+.logobrand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.logobrand span{
+    font-family: Volkhov;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 100% */
+    letter-spacing: 0.144px;
+}
+.logobrand img{
+    width: 19px;
+    height: 19px;
+    flex-shrink: 0;
+    fill: var(--Paragraph, #666);
+}
+.nav-item{
+    color: black;
+}
+.nav-item a{
+    color: black;
+    text-decoration: none;
+    position: relative;
+    margin-left: 25px;
+    
+}
+
+.navbar .nav-item a::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #FA7436;;
+    transition: width .3s;
+    position: absolute;
+    bottom: 0;
+    left: 23;
+}
+.nav-item:focus .nav-link,
+.nav-item.active .nav-link
+ {
+    color: black; 
+}
+.navbar .nav-item a:hover::after,
+.navbar .nav-item a.active::after{
+    width: 50%;
+}
+.log-btn{
+    font-size: 18px;
+    color: #FA7436;
+    font-weight: 700;
+    font-size: 20px;
+}
+.log-btn:hover{
+    color: #FA7436;
+}
+.sign-btn{
+    width: 160px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #FA7436;
+    font-weight: 700;
+    box-shadow: 0px 8px 16px 0px rgba(250, 116, 54, 0.24);
+    color: white;
+    font-size: 18px;
+}
+.sign-btn:hover{
+    color: #FA7436;
+    background-color: transparent;
+    border: 1px solid #FA7436;
+}
+
+
+/* -------------------Home Hero Section------------------ */
+#home{
+    width: 100%;
+    min-height: 120vh;
+    /* background: #FEFCFB; */
+    /* background-color: aqua; */
+    /* margin-top: 100px; */
+    /* padding-top: 120px; */
+    /* position: absolute; */
+    /* z-index: -2; */
+    
+}
+.typo{
+    padding-top: 120px;
+}
+.intro-type{
+    color: #222;
+    font-family: Volkhov;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px; /* 109.375% */
+}
+.journey{
+    color:  #FA7436;
+    font-family: Volkhov;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px;
+}
+.intro-type2{
+    color: #666;
+
+/* Paragraph-20px */
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 200% */
+    width: 100%;
+}
+.discover-btn{
+    display: inline-flex;
+    padding: 14px 28px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid  #FA7436;
+    background: #FFF;
+    color: #FA7436;
+    font-size: 18px;
+}
+.discover-btn:hover{
+    background-color: #FA7436;
+    color: white;
+}
+.img-area{
+    position: relative;
+    /* position: fixed; */
+    padding-top: 75px;
+}
+.man-img{
+    display: block;
+    /* position: relative; */
+    /* width: 100%; */
+    height: auto;
+    /* top: 10%; */
+    /* resize: 10%; */ 
+    /* z-index: -1; */
+}
+/* .half-ellipse {
+    position: absolute;
+    z-index: 1;
+    /* top: 420%; */
+    /* top: 315px; */
+    /* bottom: 0; */
+    /* right: 4%; */
+    /* width: 470px; */
+    /* height: 250px;
+    width: 90%; */
+    /* height: 320%; */
+    /* background-color: #FA7436;
+    border-radius: 0 0 550px 550px; */
+/* } */
+.image-container {
+    position: relative;
+    width: 470px;
+    height: 530px; 
+    /* overflow: hidden;  */
+}
+.img-container::before{
+    content: '';
+    position: absolute;
+    /* bottom: 0; */
+    left: 50%;
+    top: 55%;
+    transform: translateX(-50%);
+    width: 85%;
+    height: 45%;
+    background-color: #FA7436;
+    border-radius:50% / 0 0 100% 100% ; 
+    z-index: -1; 
+}
+.animated-div {
+    
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.animated-div:hover {
+    transform: translateY(-10px);
+}
+.tour-image{
+    width: 32px;
+    height: 32px;
+}
+.besttour{
+    position: absolute;
+    top: 150px;
+    left: -15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 160px;
+    height: 70px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFF;
+    /* padding: 10px; */
+    box-shadow: -8px 8px 40px 0px rgba(0, 0, 0, 0.10);
+}
+.besttour p{
+    padding-top: 13px;
+    color:  #444;
+    width: 76px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.rating{
+    position: absolute;
+    top: 375px;
+    left: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 180px;
+    height: 70px;
+    /* flex-shrink: 0; */
+    border-radius: 10px;
+    background: #FFF;
+    /* padding: 10px; */
+    box-shadow: -8px 8px 40px 0px rgba(0, 0, 0, 0.10);
+}
+.rating-image{
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+}
+.ratingdiv{
+    padding-top: 15px;
+}
+.ratingdiv h4{
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.ratingdiv p{
+    font-size: 12px;
+    color:  #444;
+    width: 100%;
+    margin-top: 0;
+    font-family: Poppins;
+    /* font-size: 16px; */
+    font-style: normal;
+    /* font-weight: 500; */
+    /* line-height: normal; */
+}
+.explore-image{
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+}
+.explore{
+    position: absolute;
+    top: 250px;
+    left: 325px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 180px;
+    height: 75px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFF;
+    padding: 10px;
+    box-shadow: -8px 8px 40px 0px rgba(0, 0, 0, 0.10);
+}
+.explorediv{
+    padding-top: 10px;
+    margin-left: 8px;
+}
+.explorediv h4{
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.explorediv p{
+    font-size: 12px;
+    color:  #444;
+    width: 100%;
+    margin-top: 0;
+    
+    font-family: Poppins;
+    font-style: normal;
+}
+
+.hero-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 2px 80px 2px rgba(0, 0, 0, 0.10);
+}
+.hero-bar div span{
+    font-size: 18px;
+    font-weight: 600;
+}
+.hero-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+.hero-bar div i{
+    font-size: 22px;
+    color: #FA7436;
+    cursor: pointer;
+}
+.hero-bar div h6{
+    font-size: 14px;
+    font-weight: normal;
+}
+.hero-bar-button{
+    display: inline-flex;
+    padding: 14px 28px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid  #FA7436;
+    background: #FA7436;
+    color: #fff;
+    font-size: 18px;
+    box-shadow: 0px 8px 16px 0px rgba(250, 116, 54, 0.16);
+}
+.hero-bar-button:hover{
+    background-color: #fff;
+    color: #FA7436;
+}
+.location button:focus, .Date button:focus, .Guests button:focus{
+    outline: none;
+    box-shadow: none;
+}
+.location .dropdown-menu, .Date .dropdown-menu, .Guests .dropdown-menu{
+    padding: 12px;
+}
+.location .dropdown-menu a{
+    text-decoration: none;
+    color:  #444;
+}
+.Date .dropdown-menu input{
+    border: none;
+}
+.Date .dropdown-menu input:focus{
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+.Guests .dropdown-menu a{
+    text-decoration: none;
+    color:  #444;
+}
+
+
+/* -------------------------------Ractangle Section-------------- */
+.carosal-ractangle-section{
+    background-color:#F7F8FC;
+}
+.carosal-ractangle-section .ractangle{
+    padding-top: 10px;
+}
+.carosal-ractangle-section .ractangle .card{
+    cursor: pointer;
+    padding: 20px 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    /* background-color: #FA7436; */
+}
+.carosal-ractangle-section .ractangle .card:hover{
+    
+    background: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22368%22%20height%3D%22277%22%20viewBox%3D%220%200%20368%20277%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M2%201C11%2022%20140.5%2015%20213.5%20116.5C286.5%20218%20276%20267.5%20367.5%20274.5%22%20stroke%3D%22%23FFB60A%22%20stroke-width%3D%224%22/%3E%3C/svg%3E') no-repeat center center;
+    background-color: #FA7436;
+    
+}
+.carosal-ractangle-section .ractangle .card:hover img{
+    filter: brightness(0) invert(1);
+}
+.carosal-ractangle-section .ractangle .card:hover .card-body h2,
+.carosal-ractangle-section .ractangle .card:hover .card-body p{
+    color: white;
+}
+.ractangle-upper-part{
+    margin-bottom: 20px;
+}
+
+.carosal-ractangle-section .ractangle .othercards{
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="365" height="272" viewBox="0 0 365 272" fill="none"><path d="M2.5 271C11.5 250 133 281.5 206 180C279 78.5 272.5 9 364 2" stroke="%23FFFAF0" stroke-width="4"/></svg>')
+}
+.carosal-ractangle-section .card .card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    
+}
+.carosal-ractangle-section .card h2{
+    color: #222;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 34px; /* 141.667% */
+}
+
+.carosal-ractangle-section .card p{
+    color: #666;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+}
+
+
+/* -----------------------Section Carusal 1 ----------------*/
+.carousal-1{
+    padding-top: 10px;
+}
+.carosal1-section{
+    width: 100%;
+    min-height: 120vh;
+    /* background-color: aqua; */
+    /* background-color: #FEFCFB; */
+    background-color:#FEFCFB;
+ }
+.carosal1upperPart{
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-bottom: 20px;
+    /* display: flex; */
+    
+}
+
+.deals-carosal-controllars{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.carosal-intro p{
+    color: #666;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 177.778% */
+    color: #666666;
+}
+.carosal-intro h1{
+    color: #222;
+    font-family: Volkhov;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 54px; /* 112.5% */
+}
+.carosal-intro h1 span{
+    color: #FA7436;
+    font-family: Volkhov;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 54px;
+}
+.deals-carosal-controllars .carusal-btns{
+    /* display: none; */
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #FA7436;
+    color: #FA7436;
+    font-weight: normal;
+}
+.deals-carosal-controllars .carusal-btns:hover{
+    background-color: #FA7436;
+    border: 1px solid #FA7436;
+    color: #fff;
+    
+}
+.deals-carosal-controllars .carusal-btns:focus{
+    outline: none;
+    box-shadow: none;
+    background-color: #fff;
+    border: 1px solid #FA7436;
+    color: #FA7436;
+}
+.deals-carosal-controllars .carusal-btns:active{
+    outline: none;
+    box-shadow: none;
+    background-color: #FA7436;
+    border: 3px solid #FA7436;
+}
+.carousal-1 .card{
+    border-radius: 10px;
+}
+.city-rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.city-rating h3{
+    color: #222222;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 133.333% */
+}
+.cardbody-row1-part2{
+    margin-bottom: 10px;
+}
+.cardbody-row1-part2 img{
+    width: 18px;
+    height: 18px;
+}
+.cardbody-row1-part2 span{
+    color:  #666;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+}
+.carosalbody-row2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    /* margin-bottom: 30px; */
+}
+.cardbody-row2-part1 img{
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+.cardbody-row2-part1 span{
+    color:  #666;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+.prices .cut-price{
+    color: #999;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+}
+.prices .actual-price{
+    width: 52px;
+height: 28px;
+flex-shrink: 0;
+border-radius: 8px;
+background: #FFE7DB;
+color: #FA7436;
+text-align: center;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+padding: 3px;
+font-weight: 600;
+line-height: 24px; /* 150% */
+}
+.card-hover-effect{
+    position: relative;
+    cursor: pointer;
+}
+.card-hover-effect img{
+    transition: opacity 0.3s;
+}
+.card-hover-effect::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 105px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    border-radius: 10px;
+    transition: opacity 0.3s;
+}
+/* .card-hover-effect img {
+    opacity: 0.5;
+} */
+.card-hover-effect:hover::before{
+    opacity: 1;
+}
+.carosal1-section .card-hover-btn{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    display: none;
+    /* display: inline-flex; */
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 60%;
+    border: 1px solid  #FA7436;
+    background: #FA7436;
+    color: #fff;
+    font-size: 18px;
+    box-shadow: 0px 8px 16px 0px rgba(250, 116, 54, 0.16);
+}
+.carosal1-section .card-hover-btn:hover{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+
+
+
+/* -----------------------section Carusal2------------- */
+ .carosal2-section{
+    width: 100%;
+    min-height: 120vh;
+    background-color: #FEFCFB;
+ }
+.carosal2upperPart{
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    /* display: flex; */
+    
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+.carosal2-svg {
+    display: block;
+    /* margin: 50px auto; */
+    transition: transform 0.2s;
+}
+
+/* Apply the bounce animation on hover */
+.carosal2-svg:hover {
+    animation: bounce 1s infinite;
+}
+.carosal2-svg{
+    cursor: pointer;
+}
+.carosal-intro p{
+    color: #666;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 177.778% */
+    color: #666666;
+}
+.carosal-intro h1{
+    color: #222;
+    font-family: Volkhov;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 54px; /* 112.5% */
+}
+.carosal-intro h1 span{
+    color: #FA7436;
+    font-family: Volkhov;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 54px;
+}
+/* .carosal-controllars{
+    margin-bottom: 20px;
+} */
+.carusal-btns{
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #FA7436;
+    color: #FA7436;
+    font-weight: normal;
+}
+.carusal-btns:hover{
+    background-color: #FA7436;
+    border: 1px solid #FA7436;
+    color: #fff;
+    
+}
+.carosal2-section .card{
+    cursor: pointer;
+}
+.carusal-btns:focus{
+    outline: none;
+    box-shadow: none;
+    background-color: #fff;
+    border: 1px solid #FA7436;
+    color: #FA7436;
+}
+.carusal-btns:active{
+    outline: none;
+    box-shadow: none;
+    background-color: #FA7436;
+    border: 3px solid #FA7436;
+}
+.carousal-2 .card{
+    border-radius: 15px;
+}
+.city-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.city-price h3{
+    color: #222222;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 133.333% */
+}
+.city-price span{
+    margin-bottom: 5px;
+    color:#FA7436;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; /* 133.333% */
+}
+.cardbody-row2-part1 span{
+    color:  #666;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+}
+.carosalbody-row2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    /* margin-bottom: 30px; */
+}
+.cardbody-row2-part2 img{
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+.cardbody-row2-part2 span{
+    color:  #666;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+
+
+/* ---------------------Testimonials ------------------*/
+
+.testimonial-section {
+    /* background-color: #F7FAFF; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F7F8FC;
+    padding: 60px 0;
+}
+.testimonial-svg:hover {
+    animation: bounce 1s infinite;
+}
+.testimonial-section h2{
+    color:  #222;
+    font-family: Volkhov;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 54px; /* 112.5% */
+}
+.highlighted-text {
+    color: #FA7436;
+}
+
+.description {
+    color:  #666;
+    /* font-family: Roboto; */
+    font-size: 18px;
+    font-style: normal;
+    width: 85%;
+    font-weight: 400;
+    line-height: 32px; /* 200% */
+
+}
+.testimonial-section .arrows {
+    margin-top: 30px;
+    
+}
+.testimonial-section .arrows span{
+    cursor: pointer;
+    margin-right: 5px;
+}
+.testimonial-section .arrows span i:hover{
+    color: #fff;
+    background-color: #FA7436;
+    /* border: 1px solid #fff; */
+    
+}
+.testimonial-section .arrows span i{
+    padding: 0;
+    border: 1px solid #FA7436;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50%;
+    align-items: center;
+    background-color: #fff;
+    color: #FD8D3A;
+    /* color: #fff; */
+    font-size: 14px;
+}
+
+.testimonial {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, z-index 0.5s ease;
+}
+
+.first-card {
+    z-index: 2;
+    width: 85%;
+    /* padding: 10px; */
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0); */
+}
+
+.testimonial-img {
+    position: absolute;
+    top: -30px;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+.testimonial-img{
+    border: 2px solid #fff;
+    margin-left: -10%;
+}
+.testimonial-content p {
+    color: #666666;
+}
+
+
+.testimonial-content h5 {
+    margin-top: 30px;
+    color: #333333;
+    font-weight: bold;
+}
+
+.location {
+    color: #999999;
+}
+.cus-card img{
+    margin-left: -50px;
+    margin-top: -10px;
+    width: 80px;
+    height: 80px;
+}
+
+/* Hidden Card */
+/* Hidden Card */
+.hidden-card {
+    /* padding-top: 75px; */
+    transform: translateY(100px) translateX(50px); /* Move down and slightly right */
+    z-index: 1;
+    width: 85%;
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0); */
+}
+.hidden-card h5{
+    /* font-size: 30px; */
+    margin-top: 30px;
+}
+.arrows {
+    margin-top: 30px;
+}
+
+.arrow-left, .arrow-right {
+    display: inline-block;
+    font-size: 24px;
+    color: #FD8D3A;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 1px solid #FA7436;
+    border-radius: 20px;
+    padding: 4px 8px ;
+}
+
+.arrow-right:hover{
+    background-color: #FA7436;
+    border: 1px solid #FA7436;
+    color: #fff;
+}
+.arrow-left:hover {
+    background-color: #FA7436;
+    border: 1px solid #FA7436;
+    color: #fff;
+
+}
+
+/* ----------------------End of Testimonial------------ */
+
+/* -----------------Start of Blog----------------- */
+.blog-section{
+    background: #FEFCFB;
+}
+.blog-section h2 {
+    color: #000;
+    font-family: Volkhov;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 54px; /* 112.5% */
+    
+}
+
+.blog-section .highlighted-text {
+    color: #FF5722;
+}
+
+.blog-section .card {
+    cursor: pointer;
+    border: none;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.blog-section .card:hover {
+    transform: translateY(-10px);
+}
+
+.blog-section .card-img-top {
+    transition: transform 0.3s ease;
+}
+
+.blog-section .card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+.blog-section .card-title {
+    color: #222;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 144.444% */
+    
+}
+
+.blog-section .card-text small {
+    font-size: 0.875rem;
+    color: #777;
+}
+
+.dot-indicators {
+    margin-top: 20px;
+}
+
+.dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background-color: #ddd;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #FF5722;
+}
+
+
+/* -----------------End of Blog----------------- */
+
+/* ------------------Subscribe ----------- */
+.subscribe-box {
+    background-image: url('form bg.svg');
+    color: white;
+    border-radius: 20px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    /* width: 70%; */
+
+    
+}
+.subscribe-box h2{
+    color: #FFF;
+text-align: center;
+font-family: Volkhov;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.input-group-text img {
+    height: 10px;
+}
+.fl-wrap {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+.bbb-wrapper .subcribe-form p {
+    color: #fff;
+    font-size: 14px;
+}
+
+.bbb-wrapper .subcribe-form form {
+    max-width: 70%;
+    margin: 15px auto;
+    position: relative;
+    
+}
+
+.bbb-wrapper .subcribe-form #subscribe input {
+    width: 100%;
+    height: 48px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    padding: 0 30px;
+    /* box-shadow: 0px 0px 0px 7px rgba(255,255,255,0.2); */
+}
+
+.bbb-wrapper .subcribe-form #subscribe #subscribe-button {
+    height: 38px;
+    padding: 0 30px;
+    border-radius: 3px;
+    border: none;
+    position: absolute;
+    right: 6px;
+    top: 6px;
+        font-size: 11px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.subscribe-message {
+    color: #fff;
+    float: left;
+    margin-top: 10px;
+    text-align: left;
+    font-weight: 500;
+    line-height: 19px;
+}
+
+.color-bg{ 
+	    background: #FA7436;
+}
+
+
+#subscribe-button:hover{
+    background: #fff;
+    color: #FA7436 !important;
+    border: 1px solid #FA7436 !important;
+}
+
+
+
+/* -------------------Footer ---------------- */
+.footer {
+    background-color: #F7F8FC;;
+    color: #6c757d;
+    padding: 2rem 0;
+    border-top: 1px solid #e9ecef;
+}
+
+.footer h5 {
+    color: #222;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px; /* 144.444% */
+}
+
+.footer a {
+    color: #666;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px; /* 144.444% */
+}
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.footer-list ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.footer-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    margin: 0 auto;
+}
+.footerbotom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.tarabooklist h5{
+    color:  #222;
+    font-family: Volkhov;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 100% */
+    letter-spacing: 0.144px;
+}
+.tarabooklist p{
+    text-align: start;
+}
+
+.footer a:hover {
+    color: #ff5722;
+    text-decoration: none;
+}
+
+.footer .social-links a {
+    color: #ff5722;
+    margin: 0 10px;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.social-links{
+    margin-bottom: 20px;
+}
+.social-links a:hover {
+    background-color: #FF5722;
+    
+    color: white;
+}
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px; 
+    height: 45px; 
+    border-radius: 50%;
+    background-color: rgb(252, 247, 247);
+    color: #FA7436;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+
+
+.footer .terms-conditions {
+    color: #6c757d;
+}
+
+.footer .bar hr {
+    border-color: #e9ecef;
+}
+
+
+/* -------------------End of Footer ---------------- */
+
+
+
+
+
+
+
+
+
+
+                /* Responsive */
+
+/* ------------------Navbar---------------- */
+@media (max-width:990px) {
+    .navbar .nav-item a:hover::after,
+    .navbar .nav-item a.active::after{
+    width: 30%;
+    }
+    .navdiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+    /* .logobrand{
+        margin: 0 auto;
+    } */
+    .btn-div{
+        margin-top: 20px;
+        margin-left: 12px;
+        margin-bottom: 20px;
+    }
+    .navs{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    
+}
+
+
+/*   -------------------------Hero-----------------  */
+
+
+@media (min-width: 1398px) {
+    #home{
+        min-height: 90vh;
+    }
+    .img-container::before{
+        height: 40%;
+        top: 60%;
+    }
+    .typo{
+        padding-top: 170px;
+    }
+    .intro-type {
+        
+        font-size: 5rem;
+        font-weight: 700;
+        line-height: 80px;
+    }
+    .intro-type2 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 50px;
+    }
+    .journey {
+        font-size: 5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 80px;
+    }
+    .discover-btn {
+        padding: 10px 18px;
+        font-size: 1.3rem;
+    }
+    .besttour {
+        top: 170px;
+        left: -20px;
+        width: 160px;
+        height: 70px;
+        padding: 6px;
+    }
+    .img-area{
+        padding-top: 100px;
+    }
+    .tour-image {
+        width: 32px;
+        height: 32px;
+    }
+    .besttour p{
+        font-size: 16px;
+        /* padding-top: 10px; */
+        margin-left: 6px;
+    }
+    .rating {
+        top: 400px;
+        left: 10px;
+        width: 210px;
+        height: 70px;
+        padding: 10px;
+    }
+    .ratingdiv{
+        margin-left: 10px;
+    }
+    .rating-image {
+        width: 32px;
+        height: 32px;
+    }
+    .ratingdiv h4{
+        font-size: 18px;
+    }
+    .rating p{
+        font-size: 14px;
+        padding-top: 0px;
+        width: 100%;
+    }
+    .explore {
+        top: 300px;
+        left: 300px;
+        width: 200px;
+        height: 75px;
+        padding: 10px;
+    }
+    .explore-image {
+        width: 32px;
+        height: 32px;
+    }
+    .explorediv h4{
+        font-size: 18px;
+    }
+    .explorediv p{
+        font-size: 14px;
+        padding-top: 0px;
+    }
+
+    /* Hero Bar */
+    .hero-bar-button {
+        padding: 18px 22px;
+        font-size: 22px;
+    }
+    /*-------------- Carosal Ractangles------- */
+    .carosal-ractangle-section .card h2 {
+        font-size: 28px;
+    }
+    .carosal-ractangle-section .card p {
+        font-size: 18px;
+    }
+
+    /* Carosal Section2 */
+    .carosal2-section{
+        min-height: 65vh;
+    }
+    .cardbody-row2-part1 span {
+        font-size: 20px;
+    }
+    .cardbody-row2-part2 span {
+        font-size: 20px;
+    }
+    .carosalbody-row2 {
+        margin: 20px 0;
+    }
+
+    /* Carosal1 section */
+    .carosal1-section {
+        width: 100%;
+        min-height: 75vh;
+    }
+    .carosal1upperPart{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .carosal-intro p {
+        font-size: 22px;
+    }
+    .carosal-intro h1 {
+        font-size: 55px;
+    }
+    .carosal-intro h1 span {
+        font-size: 55px;
+    }
+    .city-rating {
+        margin: 0;
+    }
+    .city-rating h3 {
+        font-size: 22px;
+    }
+    .cardbody-row1-part2 span {
+        font-size: 18px;
+    }
+    .cardbody-row1-part2 img {
+        width: 22px;
+        height: 22px;
+    }
+    .carosalbody-row2 {
+        margin: 0;
+    }
+    .cardbody-row2-part1 span {
+        font-size: 18px;
+    }
+    .cardbody-row2-part1 img {
+        width: 18px;
+        height: 22px;
+    }
+    .prices .cut-price {
+        font-size: 16px;
+    }
+    .prices .actual-price {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    /* Testimonial */
+    .testimonial-content p {
+        color: #666666;
+        font-size: 16px !important;
+    }
+    .first-card h5{
+        font-size: 22px !important;
+    }
+    .hidden-card h5 {
+        font-size: 22px !important;
+        margin-top: 30px;
+    }
+    .testimonial-section{
+        min-height: 70vh;
+    }
+    .testimonial-section h2 {
+        font-size: 55px;
+    }
+    .testimonial-section .description {
+        font-size: 22px;
+    }
+
+}
+@media (max-width: 1024px) {
+    #home{
+        min-height: 65vh;
+        /* background-color: aquamarine; */
+    }
+    /* Image area */
+    .img-container::before{
+        height: 40%;
+        top: 60%;
+    }
+    .typo{
+        padding-top: 170px;
+    }
+    .intro-type {
+        
+        font-size: 3.2rem;
+        font-weight: 700;
+        line-height: 50px;
+    }
+    .intro-type2 {
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 30px;
+    }
+    .journey {
+        font-size: 3.2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 50px;
+    }
+    .discover-btn {
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
+    .besttour {
+        top: 157px;
+        left: -10px;
+        width: 130px;
+        height: 60px;
+        padding: 6px;
+    }
+    .img-area{
+        padding-top: 100px;
+    }
+    .tour-image {
+        width: 22px;
+        height: 22px;
+    }
+    .besttour p{
+        font-size: 12px;
+        /* padding-top: 10px; */
+        margin-left: 6px;
+    }
+    .rating {
+        top: 343px;
+        left: 15px;
+        width: 155px;
+        height: 60px;
+        padding: 10px;
+    }
+    .ratingdiv{
+        margin-left: 10px;
+    }
+    .rating-image {
+        width: 22px;
+        height: 22px;
+    }
+    .ratingdiv h4{
+        font-size: 16px;
+    }
+    .rating p{
+        font-size: 10px;
+        padding-top: 0px;
+        width: 100%;
+    }
+    .explore {
+        top: 245px;
+        left: 272px;
+        width: 150px;
+        height: 60px;
+        padding: 10px;
+    }
+    .explore-image {
+        width: 22px;
+        height: 22px;
+    }
+    .explorediv h4{
+        font-size: 14px;
+    }
+    .explorediv p{
+        font-size: 10px;
+        padding-top: 0px;
+    }
+
+    /* Hero Bar */
+    .hero-bar-button {
+        padding: 10px 22px;
+        font-size: 18px;
+    }
+
+    /* ----Carosal Ractangles--- */
+    .carosal-ractangle-section .card h2 {
+        font-size: 22px;
+    }
+    .carosal-ractangle-section .card p {
+        /* margin: 0; */
+        font-size: 15px;
+        padding: 0;
+    }
+    .carosal-ractangle-section .ractangle .card {
+        padding: 10px 0px;
+    }
+    .carosal-ractangle-section .card .card-body{
+        gap: 15px;
+        
+    }
+
+    /* Carosal2-section */
+    .carosal1-section {
+        width: 100%;
+        min-height: 70vh;
+        padding: 0;
+    }
+    .carosal2-section{
+        min-height: 65vh;
+    }
+    .city-price h3 {
+        font-size: 20px;
+    }
+    .city-price span {
+        font-size: 20px;
+    }
+    /* Carosal1-section */
+    .carosal1upperPart{
+        width: 100%;
+        
+    }
+    .carosal-intro{
+        margin: 0 auto;
+    }
+    .carosal1-section .cardbody-row2-part1 span {
+        color: #666;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+    }
+    .carosal1-section .prices .actual-price{
+        font-size: 13px;
+    }
+    .carosal1-section .prices .cut-price{
+        font-size: 13px;
+    }
+    .carosal1-section .city-rating h3 {
+        font-size: 16px;
+    }
+    .carosal1-section .cardbody-row1-part2 span {
+        font-size: 14px;
+    }
+
+    /* .carosal1-padding{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } */
+
+    /* carosal 1 seccition */
+
+    .carosal1-section .card-hover-btn{
+        top: 30%;
+        left: 20%;
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+    .card-hover-effect::before{
+        bottom: 105px;
+    }
+
+    /* Testimonial Section */
+    .testimonial-section{
+        min-height: 60vh;
+    }
+    .testimonial-svg {
+        top: 35px;
+        right: 35px;
+        width: 160px;
+        height: 160px;
+    }
+
+}
+@media (max-width: 853px) , (max-width: 912px){
+    #home{
+        min-height: 55vh;
+    }
+    .img-container::before{
+        height: 40%;
+        top: 60%;
+    }
+    .typo{
+        padding-top: 130px;
+        /* padding-right: 30px; */
+    }
+    .intro-type {
+        
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 50px;
+    }
+    .intro-type2 {
+        font-size: 0.85rem;
+        font-weight: 400;
+        line-height: 30px;
+    }
+    .journey {
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 50px;
+    }
+    .discover-btn {
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
+    .besttour {
+        top: 130px;
+        left: -30px;
+        width: 120px;
+        height: 55px;
+        padding: 6px;
+    }
+    .img-area{
+        padding-top: 100px;
+    }
+    .tour-image {
+        width: 22px;
+        height: 22px;
+    }
+    .besttour p{
+        font-size: 12px;
+        /* padding-top: 10px; */
+        margin-left: 6px;
+    }
+    .rating {
+        top: 265px;
+        left: -10px;
+        width: 115px;
+        height: 55px;
+        padding: 10px;
+    }
+    .ratingdiv{
+        margin-left: 10px;
+    }
+    .rating-image {
+        width: 22px;
+        height: 22px;
+    }
+    .ratingdiv h4{
+        font-size: 16px;
+    }
+    .rating p{
+        font-size: 10px;
+        padding-top: 0px;
+        width: 100%;
+    }
+    .explore {
+        top: 205px;
+        left: 172px;
+        width: 140px;
+        height: 60px;
+        padding: 10px;
+    }
+    .explore-image {
+        width: 22px;
+        height: 22px;
+    }
+    .explorediv h4{
+        font-size: 14px;
+    }
+    .explorediv p{
+        font-size: 10px;
+        padding-top: 0px;
+    }
+    /* Hero Bar */
+    .hero-bar-button {
+        padding: 8px 8px;
+        font-size: 14px;
+    }
+    .hero-bar div span {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .hero-bar div h6 {
+        font-size: 10px;
+        font-weight: normal;
+    }
+    /* Carossal ractangles */
+    .carosal-ractangle-section .card{
+        padding: 5px;
+    }
+    .carosal-ractangle-section .ractangle-upper-part{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .carosal-ractangle-section .ractangle-upper-part img{
+        display: none;
+    }
+    /* .carosal-ractangle-section .card .card-body img{
+        width: 24px;
+        height: 24px;
+    } */
+    .carosal-ractangle-section .card h2 {
+        margin: 0;
+        font-size: 16px;
+    }
+    .carosal-ractangle-section .card p{
+        line-height: 16px; /* 162.5% */
+        margin: 0;
+        padding: 0;
+    }
+    .carosal-ractangle-section .card .card-body {
+        padding: 10px;
+        gap: 5px;
+    }
+    .carosal-ractangle-section .card .card-body img{
+        width: 30px;
+        height: 30px;
+    }
+    .carosal-ractangle-section .card p {
+        /* margin: 0; */
+        font-size: 12px;
+    }
+    .carosal-ractangle-section .ractangle .card {
+        padding: 0px;
+    }
+    .carosal-ractangle-section .card .card-body{
+        gap: 15px;
+        
+    }
+
+
+    /* Carosal2 section */
+    .carosal2-section {
+        min-height: 60vh;
+    }
+    .carosal-intro h1 {
+        font-size: 40px;
+        margin: 0;
+    }
+    .carosal-intro h1 span {
+        font-size: 40px;
+        margin: 0;
+    }
+    .carosal-intro p {
+        font-size: 13px;
+        margin: 0;
+    }
+    .city-price h3 {
+        padding: 0;
+        font-size: 16px;
+        margin: 0;
+    }
+    .city-price span {
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+        font-weight: normal;
+        
+    }
+    .city-price {
+        display: block;
+    }
+    .carosal2-section .cardbody-row2-part1 span {
+        font-size: 13px;
+    }
+    .carosal2-section .cardbody-row2-part2 span {
+        font-size: 13px;
+    }
+
+    /*  Carosal1 Section  */
+    .carosal1-section {
+        width: 100%;
+        min-height: 65vh;
+    }
+    .carosal-intro p {
+        font-size: 16px;
+    }
+    .carosal-intro h1 {
+        font-size: 36px;
+    }
+    .carosal-intro h1 span {
+        font-size: 36px;
+    }
+    .city-rating {
+        flex-direction: column;
+        align-items: start;
+        gap: 0px;
+        margin: 0;
+    }
+    .city-rating h3 {
+        font-size: 16px;
+        margin: 0;
+    }
+    .card-hover-effect::before {
+        bottom: 160px;
+        border-radius: 10px;
+    }
+    .carosal1-section .card-hover-btn{
+        position: absolute;
+        top: 22%;
+        left: 20%;
+        padding: 4px 8px;
+        width: 60%;
+        font-size: 14px;
+    }
+    .cardbody-row1-part2 span {
+        font-size: 16px;
+        margin: 0;
+    }
+    .cardbody-row1-part2 img {
+        width: 16px;
+        height: 16px;
+    }
+    .carosalbody-row2 {
+        flex-direction: column;
+        align-items: start;
+        margin: 0;
+    }
+    .cardbody-row2-part1 span {
+        font-size: 16px;
+    }
+    .cardbody-row2-part1 img {
+        width: 16px;
+        height: 20px;
+    }
+    .prices .cut-price {
+        font-size: 12px;
+    }
+    .prices .actual-price {
+        font-size: 12px;
+        padding: 3px;
+    }
+
+    /* Testimonial */
+    .testimonial-section{
+        min-height: 65vh;
+        display: inline-block;
+        padding-top: 40px;
+        /* padding: 0 !important; */
+    }
+    .testimonial-section .arrows {
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    .testimonial-display{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    .hidden-card {
+        /* padding-top: 75px; */
+        padding: 15px 30px;
+        transform: translateY(90px) translateX(50px); /* Move down and slightly right */
+        z-index: 1;
+        width: 100%;
+    }
+    .testimonial-content p {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .testimonial-content h5 {
+        margin-top: 15px;
+    }
+    .card-area{
+        width: 100%;
+    }
+    .cards{
+        
+    }
+    .first-card{
+        width: 100%;
+        padding: 15px 30px;
+    }
+    .testimonial-img {
+        margin-left: -10%;
+    }
+    .testimonial-section h2 {
+        font-size: 36px;
+    }
+    .testimonial-section .description {
+        font-size: 18px;
+        /* text-align: center; */
+    }
+
+    /* Subscribe */
+    .subscribe-box h2 {
+        font-size: 40px;
+    }
+    .bbb-wrapper .subcribe-form #subscribe input{
+        /* padding: 0; */
+        width: 100%;
+    }
+    .subscribe-box {
+        height: 300px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 764px) {
+    .img-container::before{
+        height: 50%;
+        top: 50%;
+    }
+    .typo{
+        padding-top: 120px;
+        /* padding-right: 30px; */
+    }
+    .intro-type {
+        
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 70px;
+    }
+    .intro-type2 {
+        font-size: 1.3rem;
+        font-weight: 400;
+        line-height: 40px;
+    }
+    .journey {
+        font-size: 4rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 70px;
+    }
+    .discover-btn {
+        padding: 12px 20px;
+        font-size: 1.3rem;
+    }
+    .besttour {
+        top: 70px;
+        left: -15px;
+        width: 150px;
+        height: 60px;
+        padding: 6px;
+    }
+    .img-area{
+        padding-top: 0px;
+    }
+    .tour-image {
+        width: 32px;
+        height: 32px;
+    }
+    .besttour p{
+        font-size: 16px;
+        /* padding-top: 10px; */
+        margin-left: 6px;
+    }
+    .rating {
+        top: 280px;
+        left: -30px;
+        width: 220px;
+        height: 70px;
+        padding: 10px;
+    }
+    .ratingdiv{
+        margin-left: 10px;
+    }
+    .rating-image {
+        width: 32px;
+        height: 32px;
+    }
+    .ratingdiv h4{
+        font-size: 18px;
+    }
+    .rating p{
+        font-size: 14px;
+        padding-top: 0px;
+        width: 100%;
+    }
+    .explore {
+        top: 180px;
+        left: 300px;
+        width: 180px;
+        height: 70px;
+        padding: 10px;
+    }
+    .explore-image {
+        width: 32px;
+        height: 32px;
+    }
+    .explorediv h4{
+        font-size: 16px;
+    }
+    .explorediv p{
+        font-size: 13px;
+        padding-top: 0px;
+    }
+
+    /* Hero Bar */
+    .hero-bar-button {
+        padding: 10px 22px;
+        font-size: 18px;
+    }
+}
+@media (max-width: 768px) {
+    #home{
+        min-height: 55vh;
+    }
+    .hero-bar-button {
+        padding: 8px 8px;
+        font-size: 14px;
+    }
+    .hero-bar div span {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .hero-bar div h6 {
+        font-size: 10px;
+        font-weight: normal;
+    }
+
+    /* -----Carosal Ractangles--- */
+    .carosal-ractangle-section .planes{
+        width: 120px;
+        height: 100px;
+    }
+    .carosal-ractangle-section .card .card-body img{
+        width: 35px;
+        height: 35px;
+    }
+    /* Carosal2 section */
+    .carosal2-section {
+        padding: 0;
+    }
+    .carosal2-section .carosal-intro h1 {
+        font-size: 36px;
+        margin: 0;
+    }
+    .carosal-intro h1 span {
+        font-size: 36px;
+        margin: 0;
+    }
+    .carosal-intro p {
+        font-size: 13px;
+        margin: 0;
+    }
+    .city-price h3 {
+        padding: 0;
+        font-size: 16px;
+        margin: 0;
+    }
+    .city-price span {
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+        font-weight: normal;
+        
+    }
+    .city-price {
+        display: block;
+    }
+    .cardbody-row2-part1 span {
+        font-size: 14px;
+    }
+    .cardbody-row2-part2 span {
+        font-size: 14px;
+    }
+
+    /* Carosal 1 section */
+    .carosal1-section .carosal1upperPart{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+    .carosal1-section .carosal-intro h1 {
+        font-size: 36px;
+        margin: 0;
+    }
+    .carosal1-section .carosal-intro h1  span{
+        font-size: 36px;
+        margin: 0;
+    }
+
+    /* Testimonial */
+    .testimonial-section{
+        min-height: 75vh;
+    }
+    .testimonial-section .description{
+        font-size: 17px;
+    }
+    .first-card{
+        width: 85%;
+        margin-left: 40px;
+    }
+    .hidden-card{
+        width: 85%;
+        margin-left: 40px;
+    }
+    /* ------------Blogs-------------- */
+    .blog-ind-card{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /* -------Footer-------- */
+    .tarabooklist p {
+        font-size: 14px;
+    }
+    .footer .social-links a {
+        color: #ff5722;
+        margin: 0 10px;
+        padding: 5px;
+        font-size: 14px;
+    }
+    .footer a {
+        font-size: 14px;
+    }
+
+    
+}
+
+@media (max-width: 540px) {
+    .img-container::before{
+        height: 45%;
+        top: 55%;
+    }
+    .typo{
+        padding-top: 100px;
+    }
+    .intro-type {
+        
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 65px;
+    }
+    .intro-type2 {
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 30px;
+    }
+    .journey {
+        font-size: 3.2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 50px;
+    }
+    .discover-btn {
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
+    .besttour {
+        top: 70px;
+        left: 10px;
+        width: 130px;
+        height: 60px;
+        padding: 6px;
+    }
+    .img-area{
+        padding-top: 0px;
+    }
+    .tour-image {
+        width: 22px;
+        height: 22px;
+    }
+    .besttour p{
+        font-size: 12px;
+        /* padding-top: 10px; */
+        margin-left: 6px;
+    }
+    .rating {
+        top: 290px;
+        left: 20px;
+        width: 155px;
+        height: 60px;
+        padding: 10px;
+    }
+    .ratingdiv{
+        margin-left: 10px;
+    }
+    .rating-image {
+        width: 22px;
+        height: 22px;
+    }
+    .ratingdiv h4{
+        font-size: 16px;
+    }
+    .rating p{
+        font-size: 10px;
+        padding-top: 0px;
+        width: 100%;
+    }
+    .explore {
+        top: 200px;
+        left: 328px;
+        width: 150px;
+        height: 60px;
+        padding: 10px;
+    }
+    .explore-image {
+        width: 22px;
+        height: 22px;
+    }
+    .explorediv h4{
+        font-size: 14px;
+    }
+    .explorediv p{
+        font-size: 10px;
+        padding-top: 0px;
+    }
+}
+@media (max-width: 576px) {
+    #home{
+        min-height: 120vh;
+        /* background-color: none; */
+    }
+    .img-container::before{
+        height: 45%;
+        top: 55%;
+    }
+    .typo{
+        padding-top: 100px;
+    }
+    .intro-type {
+        
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 65px;
+    }
+    .intro-type2 {
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 30px;
+    }
+    .journey {
+        font-size: 3.2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 50px;
+    }
+    .discover-btn {
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
+    .besttour {
+        top: 70px;
+        left: 10px;
+        width: 130px;
+        height: 60px;
+        padding: 6px;
+    }
+    .img-area{
+        padding-top: 0px;
+    }
+    .tour-image {
+        width: 32px;
+        height: 32px;
+    }
+    .besttour p{
+        font-size: 14px;
+        /* padding-top: 10px; */
+        margin-left: 6px;
+    }
+    .rating {
+        top: 290px;
+        left: -10px;
+        width: 210px;
+        height: 60px;
+        padding: 10px;
+    }
+    .ratingdiv{
+        margin-left: 10px;
+    }
+    .rating-image {
+        width: 32px;
+        height: 32px;
+    }
+    .ratingdiv h4{
+        font-size: 18px;
+    }
+    .rating p{
+        font-size: 14px;
+        padding-top: 0px;
+        width: 100%;
+    }
+    .explore {
+        top: 200px;
+        left: 310px;
+        width: 170px;
+        height: 70px;
+        padding: 10px;
+    }
+    .explore-image {
+        width: 32px;
+        height: 32px;
+    }
+    .explorediv h4{
+        font-size: 18px;
+    }
+    .explorediv p{
+        font-size: 12px;
+        padding-top: 0px;
+    }
+    /* Carosal Ractangles */
+    .carosal-ractangle-section .carosal-intro p {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .carosal-ractangle-section .card .card-body{
+        gap: 20px;
+        padding: 15px;
+        
+    }
+    .carosal-ractangle-section .card h2{
+        font-size: 22px;
+    }
+    
+    .carosal-ractangle-section .card p{
+        font-size: 14px;
+    }
+    .carosal-ractangle-section .card .card-body img{
+        /* width: 50px;
+        height: 50px; */
+    }
+
+
+    /* Carosal2 Section */
+    .carosal2-section{
+        /* min-height: 220vh; */
+        padding: 0;
+    }
+    .carosal2-padding{
+        padding: 0 60px;
+    }
+    .carosal2upperPart{
+        width: 100%;
+        padding: 0;
+        margin: auto;
+    }
+    .carosal-intro{
+        padding: 0;
+    }
+    .carosal2-svg{
+        display: none;
+    }
+    .carosal-controllars{
+        padding: 0 67px;
+    }
+    .carousal-2 .card{
+        border-radius: 20px;
+        width: 80%;
+        margin: auto;
+    }
+    .city-price{
+        display: flex;
+    }
+    .city-price h3{
+        font-size: 24px;
+    }
+    .city-price span{
+        font-size: 24px;
+    }
+    .cardbody-row2-part1 span{
+        font-size: 18px;
+    }
+    .carosalbody-row2{
+        margin-top: 20px;
+    }
+    .cardbody-row2-part2 img{
+        width: 16px;
+        height: 16px;
+        flex-shrink: 0;
+        border-radius: 10px;
+    }
+    .cardbody-row2-part2 span{
+        margin-top: 5px;
+        font-size: 18px;
+    }
+
+
+    /* Carosal 1 Section */
+    .carosal1-padding{
+        padding: 0 60px;
+    }
+    .carosal1upperPart{
+        width: 80%;
+        padding: 0;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .carousal-1 .card {
+        border-radius: 10px;
+        width: 80%;
+        margin: auto;
+    }
+    .card-hover-effect::before {
+        bottom: 109px;
+        border-radius: 10px;
+    }
+    .carosal-intro h1 {
+        font-size: 40px;
+    }
+    .carosal-intro p {
+        font-size: 18px;
+        margin: 0;
+    }
+    .city-rating h3 {
+        font-size: 24px;
+        margin: 0;
+    }
+    .city-rating {
+        flex-direction: row;
+    }
+    .carosalbody-row2 {
+        flex-direction: row;
+        /* align-items: start;
+        margin: 0; */
+    }
+    .cardbody-row1-part2 img {
+        width: 22px;
+        height: 22px;
+    }
+    .cardbody-row1-part2 span {
+        font-size: 20px;
+        /* margin-top: 10px; */
+    }
+    .carosal1-section .card-hover-btn{
+        top: 40%;
+        left: 20%;
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+    .card-hover-effect .cardbody-row2-part1 img {
+        width: 18px;
+        height: 22px;
+    }
+    .card-hover-effect .carosalbody-row2 {
+        margin-top: 10px;
+    }
+    .card-hover-effect .cardbody-row2-part1 span {
+        font-size: 20px;
+    }
+    .prices .actual-price {
+        font-size: 18px;
+    }
+    .prices .cut-price {
+        font-size: 18px;
+    }
+
+    /* Testimonial */
+    .testimonial-section{
+        min-height: 75vh;
+        display: inline-block;
+        padding-top: 40px;
+        /* padding: 0 !important; */
+        padding: 45px 30px;
+    }
+    .testimonial-section .arrows {
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    .testimonial-display{
+        display: inline-block;
+        padding: 0;
+    }
+    .hidden-card {
+        /* padding-top: 75px; */
+        padding: 15px 30px;
+        transform: translateY(90px) translateX(50px); /* Move down and slightly right */
+        z-index: 1;
+        width: 85%;
+    }
+    .testimonial-content p {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .testimonial-content h5 {
+        margin-top: 15px;
+    }
+    .card-area{
+        width: 100%;
+    }
+    .cards{
+        
+    }
+    .first-card{
+        width: 85%;
+        padding: 15px 30px;
+    }
+    .testimonial-img {
+        margin-left: -10%;
+    }
+    .testimonial-section h2 {
+        font-size: 36px;
+    }
+    .testimonial-section .description {
+        font-size: 18px;
+        /* text-align: center; */
+    }
+
+    /* blogs */
+    
+    .blog-ind-card{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .blog-section h2 {
+        font-size: 38px;
+    }
+    .blog-section .card-title {
+        font-size: 18px;
+    }
+    .blog-section .card-text small {
+        font-size: 0.9rem;
+    }
+
+    /*------------- Footer----------- */
+    .tarabooklist p {
+        font-size: 18px;
+    }
+    .tarabooklist h5 {
+        font-size: 30px;
+    }
+    .footer-logo {
+        margin-bottom: 20px;
+    }
+
+    /* -------Subscribe-------- */
+    .subscribe-box h2 {
+        font-size: 36px;
+    }
+    .bbb-wrapper .subcribe-form #subscribe input{
+        /* padding: 0; */
+        width: 100%;
+    }
+    .subscribe-box {
+        height: 300px;
+        width: 100%;
+    }
+
+}
+
+
+
+@media (max-width: 412px) {
+    .img-container::before{
+        height: 45%;
+        top: 55%;
+    }
+    .typo {
+        padding-top: 80px;
+    }
+    .intro-type {
+        
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 50px;
+    }
+    .intro-type2 {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 30px;
+    }
+    .discover-btn {
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
+    .journey {
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 50px;
+    }
+    .img-area {
+        padding-top: 0px;
+    }
+    .besttour {
+        top: 50px;
+        left: 0px;
+        width: 100px;
+        height: 60px;
+        padding: 6px;
+    }
+    .tour-image {
+        width: 22px;
+        height: 22px;
+    }
+    .besttour p{
+        font-size: 12px;
+        /* padding-top: 10px; */
+        margin-left: 6px;
+    }
+    .rating {
+        top: 207px;
+        left: 15px;
+        width: 120px;
+        height: 60px;
+        padding: 10px;
+    }
+    .ratingdiv{
+        margin-left: 10px;
+    }
+    .rating-image {
+        width: 22px;
+        height: 22px;
+    }
+    .ratingdiv h4{
+        font-size: 16px;
+    }
+    .rating p{
+        font-size: 10px;
+        padding-top: 0px;
+        width: 100%;
+    }
+    .explore {
+        top: 150px;
+        left: 211px;
+        width: 150px;
+        height: 60px;
+        padding: 10px;
+    }
+    .explore-image {
+        width: 22px;
+        height: 22px;
+    }
+    .explorediv h4{
+        font-size: 14px;
+    }
+    .explorediv p{
+        font-size: 10px;
+        padding-top: 0px;
+    }
+}
+
+
+@media (max-width: 430px) {
+    #home{
+        min-height: 103vh;
+    }
+    .img-container::before{
+        height: 45%;
+        top: 55%;
+    }
+    .typo {
+        padding-top: 80px;
+    }
+    .intro-type {
+        
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 50px;
+    }
+    .intro-type2 {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 30px;
+    }
+    .discover-btn {
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
+    .journey {
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 50px;
+    }
+    .img-area {
+        padding-top: 0px;
+    }
+    .besttour {
+        top: 50px;
+        left: 0px;
+        width: 100px;
+        height: 60px;
+        padding: 6px;
+    }
+    .tour-image {
+        width: 22px;
+        height: 22px;
+    }
+    .besttour p{
+        font-size: 12px;
+        /* padding-top: 10px; */
+        margin-left: 6px;
+    }
+    .rating {
+        top: 215px;
+        left: 15px;
+        width: 120px;
+        height: 60px;
+        padding: 10px;
+    }
+    .ratingdiv{
+        margin-left: 10px;
+    }
+    .rating-image {
+        width: 22px;
+        height: 22px;
+    }
+    .ratingdiv h4{
+        font-size: 16px;
+    }
+    .rating p{
+        font-size: 10px;
+        padding-top: 0px;
+        width: 100%;
+    }
+    .explore {
+        top: 150px;
+        left: 226px;
+        width: 150px;
+        height: 60px;
+        padding: 10px;
+    }
+    .explore-image {
+        width: 22px;
+        height: 22px;
+    }
+    .explorediv h4{
+        font-size: 14px;
+    }
+    .explorediv p{
+        font-size: 10px;
+        padding-top: 0px;
+    }
+
+    /* Carosal Ractangle sections */
+    .carosal-ractangle-section .carosal-intro p {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    /* carosal2 section */
+    .carosal2-section .card{
+        border-radius: 10px;
+    }
+    .carosal-controllars {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5px;
+    }
+    .carosal2-section .carosal-intro h1  span {
+        font-size: 36px;
+    }
+    .city-price h3 {
+        font-size: 20px;
+    }
+    .city-price span {
+        font-size: 18px;
+    }
+    .cardbody-row2-part1 span {
+        font-size: 13px;
+    }
+    .cardbody-row2-part2 span {
+        font-size: 13px;
+    }
+    .carosalbody-row2 {
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* Carosal 1 Section */
+    .carosal1-padding{
+        padding: 0 60px;
+    }
+    .carosal1upperPart{
+        width: 100%;
+        padding: 0;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .carousal-1 .card {
+        border-radius: 10px;
+        width: 80%;
+        margin: auto;
+    }
+    .card-hover-effect::before {
+        bottom: 106px;
+        border-radius: 10px;
+    }
+    .carosal-intro h1 {
+        font-size: 34px;
+    }
+    .carosal-intro h1  span{
+        font-size: 34px;
+    }
+    .carosal-intro p {
+        font-size: 15px;
+        margin: 0;
+    }
+    .city-rating h3 {
+        font-size: 20px;
+        margin: 0;
+    }
+    .city-rating {
+        flex-direction: row;
+    }
+    .carosalbody-row2 {
+        flex-direction: row;
+        /* align-items: start;
+        margin: 0; */
+    }
+    .cardbody-row1-part2 img {
+        width: 18px;
+        height: 18px;
+    }
+    .cardbody-row1-part2 span {
+        font-size: 16px;
+        /* margin-top: 10px; */
+    }
+    .carosal1-section .card-hover-btn{
+        top: 35%;
+        left: 20%;
+        padding: 8px 16px;
+        font-size: 18px;
+    }
+    .card-hover-effect .cardbody-row2-part1 img {
+        width: 16px;
+        height: 20px;
+    }
+    .card-hover-effect .carosalbody-row2 {
+        margin-top: 10px;
+    }
+    .card-hover-effect .cardbody-row2-part1 span {
+        font-size: 16px;
+    }
+    .prices .actual-price {
+        font-size: 14px;
+    }
+    .prices .cut-price {
+        font-size: 14px;
+    }
+
+    /* Testimonial */
+    .testimonial-section{
+        min-height: 85vh;
+        display: inline-block;
+        padding-top: 20px;
+        /* padding: 0 !important; */
+        padding: 45px 30px;
+    }
+    .testimonial-section .arrows {
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    .testimonial-display{
+        display: inline-block;
+        width: 100%;
+        padding: 0;
+    }
+    .hidden-card {
+        /* padding-top: 75px; */
+        padding: 15px 30px;
+        transform: translateY(110px) translateX(50px); /* Move down and slightly right */
+        z-index: 1;
+        width: 65%;
+    }
+    .testimonial-content p {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .testimonial-content h5 {
+        margin-top: 15px;
+    }
+    .card-area{
+        width: 100%;
+    }
+    .cards{
+        
+    }
+    .first-card{
+        width: 65%;
+        padding: 15px 30px;
+    }
+    .testimonial-img {
+        margin-left: -25%;
+    }
+    .testimonial-section h2 {
+        font-size: 34px;
+    }
+    .testimonial-section .description {
+        font-size: 17px;
+        /* text-align: center; */
+    }
+
+    /*----------------- Blog----------- */
+    .blog-ind-card{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .blog-section h2 {
+        font-size: 36px;
+    }
+    .blog-section .card-title {
+        font-size: 16px;
+    }
+    .blog-section .card-text small {
+        font-size: 0.9rem;
+    }
+
+    /* -----------Subscribe------------- */
+    .subscribe-box h2 {
+        font-size: 30px;
+    }
+    .bbb-wrapper .subcribe-form #subscribe input{
+        /* padding: 0; */
+        width: 100%;
+    }
+    .subscribe-box {
+        height: 260px;
+        width: 100%;
+        padding: 0 !important;
+    }
+    .bbb-wrapper .subcribe-form #subscribe #subscribe-button {
+        height: 38px;
+        padding: 0 5px;
+    }
+}
+
+@media (max-width: 412px) {
+    .intro-type{
+        font-size: 2.7rem;
+    }
+    .journey{
+        font-size: 2.7rem;
+    }
+    .intro-type2{
+        font-size: 0.85rem;
+    }
+    .rating {
+        top: 212px;
+        left: 15px;
+        width: 120px;
+        height: 50px;
+        padding: 10px;
+    }
+    .besttour {
+        top: 55px;
+        left: 0px;
+        width: 100px;
+        height: 50px;
+        padding: 6px;
+    }
+    .explore {
+        top: 150px;
+        left: 212px;
+        width: 150px;
+        height: 55px;
+        padding: 10px;
+    }
+}
+@media (max-width: 390px) {
+    #home{
+        min-height: 100vh;
+    }
+    .intro-type{
+        font-size: 2.5rem;
+    }
+    .journey{
+        font-size: 2.5rem;
+    }
+    .rating{
+        display: none;
+    }
+    .besttour{
+        display: none;
+    }
+    .explore{
+        display: none;
+    }
+
+    /* Carosal2 section */
+    .carosal2-padding {
+        padding: 0 20px;
+    }
+    .carosal2-section .card{
+        border-radius: 10px;
+    }
+    .carosal-controllars {
+        padding: 0px 48px;
+    }
+    .carosal2-section {
+        padding: 0;
+    }
+    .carosal-intro h1 {
+        font-size: 40px;
+        margin: 0;
+    }
+    .carosal-intro h1 span {
+        font-size: 40px;
+        margin: 0;
+    }
+    .carosal-intro p {
+        font-size: 13px;
+        margin: 0;
+    }
+    .city-price h3 {
+        padding: 0;
+        font-size: 16px;
+        margin: 0;
+    }
+    .city-price span {
+        padding: 0;
+        margin: 0;
+        font-size: 14px;
+        
+    }
+    .cardbody-row2-part1 span {
+        font-size: 12px;
+    }
+    .cardbody-row2-part2 span {
+        font-size: 12px;
+    }
+
+    /* Carosaal 1 section */
+    .carosal1-padding{
+        padding: 0 20px;
+    }
+
+    .card-hover-effect::before {
+        bottom: 100px;
+        border-radius: 10px;
+    }
+    .carosal-intro h1 {
+        font-size: 30px;
+    }
+    .carosal-intro h1  span{
+        font-size: 30px;
+    }
+    .carosal-intro p {
+        font-size: 14px;
+        margin: 0;
+    }
+    .city-rating h3 {
+        font-size: 18px;
+        margin: 0;
+    }
+    .cardbody-row1-part2 img {
+        width: 16px;
+        height: 16px;
+    }
+    .cardbody-row1-part2 span {
+        font-size: 14px;
+        /* margin-top: 10px; */
+    }
+    .carosal1-section .card-hover-btn{
+        top: 35%;
+        left: 20%;
+        padding: 6px 12px;
+        font-size: 18px;
+    }
+    .card-hover-effect .cardbody-row2-part1 img {
+        width: 14px;
+        height: 16px;
+    }
+    .card-hover-effect .carosalbody-row2 {
+        /* margin-top: 10px; */
+        margin: 0;
+    }
+    .card-hover-effect .cardbody-row2-part1 span {
+        font-size: 14px;
+    }
+    .prices .actual-price {
+        font-size: 13px;
+    }
+    .prices .cut-price {
+        font-size: 13px;
+    }
+
+    /* Testimonials */
+    .testimonial-section{
+        min-height: 85vh;
+        display: inline-block;
+        padding-top: 20px;
+        /* padding: 0 !important; */
+        padding: 45px 30px;
+    }
+    .testimonial-section .arrows {
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    .testimonial-display{
+        display: inline-block;
+        width: 100%;
+        padding: 0;
+    }
+    .testimonial-section h2{
+        font-size: 36px;
+    }
+    .hidden-card {
+        /* padding-top: 75px; */
+        padding: 15px 30px;
+        transform: translateY(110px) translateX(50px); /* Move down and slightly right */
+        z-index: 1;
+        width: 65%;
+    }
+    .testimonial-content p {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .testimonial-content h5 {
+        margin-top: 14px;
+    }
+    .card-area{
+        width: 100%;
+    }
+    .cards{
+        
+    }
+    .first-card{
+        width: 65%;
+        padding: 15px 30px;
+    }
+    .testimonial-img {
+        margin-left: -25%;
+    }
+    .testimonial-section h2 {
+        font-size: 34px;
+    }
+    .testimonial-section .description {
+        font-size: 16px;
+        /* text-align: center; */
+    }
+
+    /* -------------Blogs---------------- */
+    .blog-ind-card{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .blog-section h2 {
+        font-size: 34px;
+    }
+    .blog-section .card-title {
+        font-size: 16px;
+    }
+    .blog-section .card-text small {
+        font-size: 0.9rem;
+    }
+
+    /* --------------Footer------------ */
+    .footerbotom {
+        flex-direction: column;
+    }
+}
+@media (max-width: 414px) {
+    .rating {
+        top: 212px;
+        left: 15px;
+        width: 120px;
+        height: 50px;
+        padding: 10px;
+    }
+    .besttour {
+        top: 55px;
+        left: 0px;
+        width: 100px;
+        height: 50px;
+        padding: 6px;
+    }
+    .explore {
+        top: 150px;
+        left: 212px;
+        width: 150px;
+        height: 55px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    /* .typo {
+        padding-top: 80px;
+        text-align: center;
+    } */
+
+    #home{
+        min-height: 95vh;
+    }
+    .intro-type2 {
+        font-size: 0.97rem;
+    }
+
+    /* carosal 2 section */
+    .carosal2-padding{
+        padding: 0 10px;
+    }
+    .carosal-intro h1 {
+        font-size: 30px;
+        margin: 0;
+    }
+    .carosal2-section .carosal-intro h1 {
+        font-size: 34px;
+        margin: 0;
+    }
+    .carosal-intro h1 span {
+        font-size: 30px;
+        margin: 0;
+    }
+    .carosal-intro p {
+        font-size: 12px;
+        margin: 0;
+    }
+    .carosal-controllars {
+        padding: 0 42px;
+    }
+    .city-price{
+        flex-direction: column;
+        align-items: start;
+        gap: 0px;
+    }
+    .city-price h3 {
+        font-size: 18px;
+    }
+    .city-price span {
+        font-size: 16px;
+    }
+    .cardbody-row2-part1 span {
+        font-size: 13px;
+    }
+    .cardbody-row2-part2 span {
+        font-size: 13px;
+    }
+    .carosalbody-row2{
+        flex-direction: column;
+        align-items: start;
+        gap: 0px;
+    }
+    .city-price {
+        padding: 0;
+        font-size: 16px;
+        margin: 0;
+    }
+
+
+    /* Carosaal 1 section */
+    .carosal1-padding{
+        padding: 0 10px;
+    }
+
+    .card-hover-effect::before {
+        bottom: 105px;
+        border-radius: 10px;
+    }
+    .city-rating {
+        flex-direction: row;
+        margin: 0;
+    }
+    .carosal1-section .carosalbody-row2{
+        flex-direction: row;
+    }
+    .carosal-intro h1 {
+        font-size: 30px;
+    }
+    .carosal1-section .carosal-intro h1 {
+        font-size: 34px;
+        margin: 0;
+    }
+    .carosal-intro h1  span{
+        font-size: 30px;
+    }
+    .carosal-intro p {
+        font-size: 14px;
+        margin: 0;
+    }
+    .city-rating h3 {
+        font-size: 18px;
+        margin: 0;
+    }
+    .cardbody-row1-part2 img {
+        width: 14px;
+        height: 14px;
+    }
+    .cardbody-row1-part2 span {
+        font-size: 14px;
+        /* margin-top: 10px; */
+    }
+    .carosal1-section .card-hover-btn{
+        top: 30%;
+        left: 20%;
+        padding: 6px 10px;
+        font-size: 16px;
+    }
+    .card-hover-effect .cardbody-row2-part1 img {
+        width: 12px;
+        height: 14px;
+    }
+    .card-hover-effect .carosalbody-row2 {
+        /* margin-top: 10px; */
+        margin: 0;
+    }
+    .card-hover-effect .cardbody-row2-part1 span {
+        font-size: 14px;
+    }
+    .prices .actual-price {
+        font-size: 12px;
+    }
+    .prices .cut-price {
+        font-size: 12px;
+    }
+
+    /* Testimonial */
+
+    .testimonial-section{
+        min-height: 85vh;
+    }
+    .testimonial-img {
+        margin-left: -30%;
+    }
+
+    /* --------------Blogs-------------- */
+    .blog-ind-card{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .blog-section h2 {
+        font-size: 34px;
+    }
+    .blog-section .card-title {
+        font-size: 14px;
+    }
+    .blog-section .card-text small {
+        font-size: 0.875rem;
+    }
+
+    /* -----------------Footer----------- */
+    .footerbotom {
+        flex-direction: column;
+    }
+
+    /* --------------Subscribe------------ */
+    .subscribe-box h2 {
+        font-size: 24px;
+    }
+    .bbb-wrapper .subcribe-form #subscribe input{
+        /* padding: 0; */
+        width: 100%;
+    }
+    .subscribe-box {
+        height: 200px;
+        width: 100%;
+        padding: 0 !important;
+    }
+    .bbb-wrapper .subcribe-form #subscribe #subscribe-button {
+        height: 38px;
+        padding: 0 5px;
+    }
+}
+
+
+/*  */
+
